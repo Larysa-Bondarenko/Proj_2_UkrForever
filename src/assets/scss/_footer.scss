@@ -20,6 +20,7 @@ margin-bottom: 30px;
   gap: 16px;  
 }
 .txt-block{
+  p{
   width: 100%;
 text-align: left;
 font-family: 'Roboto', sans-serif;
@@ -27,13 +28,8 @@ font-family: 'Roboto', sans-serif;
         font-weight: 400;
         font-size: clamp(18px, 1.87vw, 22px)
 }
-// .not-logo-part{
-//   display: flex;
-//   flex-grow: 2;
-//   justify-content: center;
-//   align-items: center;
-//   gap: 30px
-// }
+}
+
 .nav-flex{
   display: flex;
   justify-content: space-between;
@@ -131,7 +127,7 @@ font-family: 'Roboto', sans-serif;
 }
 
  //responsive
- @media  screen and (max-width: 834px){
+ @media  screen and (max-width: 840px){
 .footer-flex{
   flex-wrap: wrap;
   justify-content: center; 
@@ -147,6 +143,6 @@ font-family: 'Roboto', sans-serif;
 }
  }
 
- @media  screen and (max-width: 375px){
+ @media  screen and (max-width: 380px){
 
  }

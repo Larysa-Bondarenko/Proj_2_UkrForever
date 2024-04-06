@@ -4,8 +4,10 @@ btn.onclick = function () {
     const bookTitle = document.getElementById('bookTitle').value;
     if (bookTitle !== '') {
         searchBooks(bookTitle);
+        scrollToBooksList();  //Scroll to element on same btn
     }
 }
+
 
 async function searchBooks(search){  
 
@@ -53,6 +55,11 @@ function formatBooks(docs){
       });
     });
     return result;
+}
+
+function scrollToBooksList() {
+  const booksListSection = document.getElementById('books-mark');
+  booksListSection.scrollIntoView({ behavior: 'smooth' });
 }
 
 function renderBooks(books) {

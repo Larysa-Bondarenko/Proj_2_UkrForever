@@ -14,78 +14,79 @@
     @@include('parts/header.html')
 
     <main>
-      <div class="container">
-        <h1>Books and Articles</h1>
-
+      
+      <section class="container page-top">
+        <h2>Books Online</h2>
         <div class="description">
-          <p>Embark on an exciting journey 
-            into the world of Ukrainian literature
-            with our online book collection! 
-            Dive into captivating stories, explore diverse genres,
-              and immerse yourself in the rich tapestry of Ukrainian
-            language and culture. Whether you're a beginner or an 
-            advanced learner, our vast selection of books
-            offers the perfect opportunity to enhance
-            your reading skills, expand your vocabulary,
-            and reinforce grammar effortlessly.
-              Discover the joy of reading in Ukrainian and 
-              unlock a world of endless possibilities for 
-              linguistic growth and cultural enrichment. 
-              Start exploring today and let the pages of
-            Ukrainian literature transport you to new horizons!
-          </p>
+             <p>Embark on an exciting journey 
+               into the world of Ukrainian literature
+               with our online book collection!
+             </p>
         </div>
-        <div class="api-flex">
-                <div class="books-api">
-                  <!-- <div class="card-body">
-                      <div class="row">
-                          <div class="col-10"> -->
-                            <label for="bookTitle">Enter a book title</label>
-                              <input type="text" id="bookTitle" class="form-control">
-                              <div class="btn-wrap">
-                                <button type="button" class=" btn search-btn" id="search-btn">Search</button>
-                              </div>
-                          <!-- </div>
-                          
-                          <div class="col-2">
-                              <button type="button" class="btn btn-info" id="search-btn">Search</button>
-                          </div>
-                      </div>
-                  </div> -->
-              </div>
-              <div class="img-wrap ">
-                <img class="api-img" src="@@webRoot/assets/images/book.jpg"  alt="open book">
-              </div>
-        </div>
-            <div class="api-answer">      
-                  <h4>Books list</h4>
+      </section>
+        <section class="container api-sect">
+             <div class="api-flex">
+                    <div class="books-api">                    
+                      <p>Start exploring today and let the pages of
+                        Ukrainian literature transport you to new horizons!</p>         
+                      <label for="bookTitle" class="label">Enter a book title</label>
+                                  <div class="input-wrap">
+                                    <input type="text" id="bookTitle" class="input">
+                                  </div>
+                                  <div class="btn-wrap">
+                                    <button type="button" class="btn search-btn" id="search-btn">Search</button>
+                                  </div>                  
+                    </div>
+              
+                  <div class="img-wrap ">
+                    <img class="api-img" src="@@webRoot/assets/images/book.jpg"  alt="open book">
+                  </div>
+                </div>
+            <div class="api-answer">  
+              <div id="books-mark"></div>    
+                  <h3>Books List</h3>
               <div class="api-grid" id="books-list"></div>
             </div> 
-
-      <!-- <div class="card">
-          <div class="card-header">
-              <h4>Books list</h4>
-          </div>
-          <div class="card-body" id="books-list"></div>
-      </div> -->
-      
-
-      <!-- Registration form -->
-          <div class="touch-form form-wrap">
-            <!-- action="/action_page.php" -->
-            <form action="#" target="_blank" method="post"> 
-                <div class="inp-name input-wrap">
-                    <input type="text" name="name" placeholder="Full name" required>
-                </div>
-              <div class="inp-email input-wrap">
-                <input type="email" name="email" placeholder="Email" required>
-              </div>
-                <div class="btn-wrap">
-                    <button type="submit" class="rect-btn submit">Submit</button>
-                </div>                                   
-            </form>
-        </div>
-      </div>  
+          </section>
+       <section class="container articles-sect">
+        <h2>Articles</h2>
+         <p>Take a look at the lastest articles</p>
+         <div class="articles-grid">
+          <ul class="articles">
+               <li class="card">
+                <img src="@@webRoot/assets/images/hairy-man.svg" alt="three men at meeting">
+                <div class="date">May 5. 2024 | 4 min read</div>
+                <h5><a href="#">How Ukrainian can help your business more than anything</a></h5>
+               </li>
+               <li class="card">
+                <img src="@@webRoot/assets/images/men-caps.svg" alt="three men laughing">
+                <div class="date">May 5. 2024 | 4 min read</div>
+                <h5><a href="#">How Ukrainian can help your business more than anything</a></h5>
+               </li>
+               <li class="card">
+                <img src="@@webRoot/assets/images/four-people.svg" alt="four people in office">
+                <div class="date">May 5. 2024 | 4 min read</div>
+                <h5><a href="#">How Ukrainian can help your business more than anything</a></h5>
+               </li>
+               <li class="card">
+                <img src="@@webRoot/assets/images/man-taskboard.svg" alt="man at taskboard">
+                <div class="date">May 5. 2024 | 4 min read</div>
+                <h5><a href="#">How Ukrainian can help your business more than anything</a></h5>
+               </li>
+               <li class="card">
+                <img src="@@webRoot/assets/images/two-couch.svg" alt="two men on couch in office">
+                <div class="date">May 5. 2024 | 4 min read</div>
+                <h5><a href="#">How Ukrainian can help your business more than anything</a></h5>
+               </li>
+               <li class="card">
+                <img src="@@webRoot/assets/images/red-haired.svg" alt="man in front of computer">
+                <div class="date">May 5. 2024 | 4 min read</div>
+                <h5><a href="#">How Ukrainian can help your business more than anything</a></h5>
+               </li>
+          </ul>
+         </div>
+         </section>
+    
     </main>
     
     @@include('parts/footer.html')

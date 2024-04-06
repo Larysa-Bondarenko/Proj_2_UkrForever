@@ -1,4 +1,4 @@
-/* Scripts for About page */
+
 //accordion
 $(document).ready(function(){
     $('.accordion-content').hide();

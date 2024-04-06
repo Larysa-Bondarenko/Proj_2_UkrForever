@@ -1,1 +1,147 @@
-/* style for about page */
+@import 'vars';
+
+input[type=text],
+ select,
+ input[type=number], 
+ input[type=tel],
+ input[type=email] {
+    height: 38px;
+    width: 100%;
+    font-size: 15px;
+line-height: 22px; 
+    padding: 7px 38px 7px 10px;
+    border: 1px solid #e4e4e4;
+    background-color: #fff;
+    border-radius: 6px;
+    appearance: none;  //to remove default form controls and add custm ones
+}
+
+ .form-row input:focus {
+    border-color: #007BFF;
+outline: none;
+ } 
+
+.label, .radio-male, .radio-female 
+{
+    color: #545454;
+font-family: 'Roboto', sans-serif;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: -0.2px;
+
+}
+.label{
+    display: block;
+    margin-bottom: 7px;
+}
+
+//another form from monticello
+input[type=text], input[type=email] {
+    height: 43px;
+    width: 100%;
+    font-size: 18px;
+    line-height: 22px; 
+    font-family: 'Montserrat';
+    font-weight: 400;
+    // padding: 7px 38px 7px 10px;
+    border-style: none;
+     border-bottom: 1px solid lightgray;
+    background-color: #fff;
+    margin-bottom: 35px;
+}
+
+ .input-wrap input{  
+  &:hover{
+    cursor: pointer;
+    background-color: lightgray;
+  }
+ &:focus {
+  cursor: auto;
+  background-color: #fff;
+  border-bottom: 1px solid $black;
+  outline: none;
+ } 
+}
+.touch-form .btn-wrap{
+  display: flex;
+  justify-content: end;
+}
+
+
+//accordion
+.accordion-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+h2{
+    margin: 60px auto 20px;
+}    
+}
+.accordion {
+margin: 0 auto 50px;
+padding: 2px;
+width: 768px;
+&-item{
+    border-bottom: 1px solid #e5e5e5;
+}
+}
+.accordion-item button{
+position: relative;
+text-align: left;
+display: block;
+width: 100%;
+padding: 16px 40px 16px 10px;
+color: $dark;
+font-size: 1.15rem;
+border: none;
+outline: none;
+background-color: #fff;
+&:hover, &:focus{
+    cursor: pointer;
+    background-color: $light-grey;
+}
+}
+.accordion-btn{
+    img{
+        position: absolute;
+        top: 18px;
+        right: 20px;
+    width: 20px;
+    aspect-ratio: 1;
+    }
+}
+.accordion-content p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+font-size: 1rem;
+padding: 10px 10px 20px;
+}
+
+.rotate {
+transition: 0.4s ease;
+-webkit-transform: rotate(180deg);
+-moz-transform: rotate(180deg);
+-ms-transform: rotate(180deg);
+-o-transform: rotate(180deg);
+
+}
+
+@media (max-width: 840px){
+html, body {
+    overflow-x: hidden;
+
+}
+body{
+    margin: 0;
+    align-items: center;
+}
+.accordion {
+    width: 100%;
+}
+.accordion-title h2{
+    width: 90%;
+    text-align: center;
+}
+}

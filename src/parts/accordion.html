@@ -1,36 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About | Ukrayinska Forever</title>
-
-  @@include('parts/head.html')
-  <link rel="stylesheet" href="@@webRoot/assets/css/about.min.css">
-</head>
-<body>
-  <div class="page-wrap">
-    @@include('parts/header.html')
-
-    <main>
-      <div class="container">
-            <h1>About Us</h1>
-            <h2>Meet our Company</h2>
-            <p>We’re a people focused
-              organisation</p>
-          </div>
-
-          <div class="people-grid"></div>
-          <div class="numbers-grid"></div>
-
-          <section class="container" id="team">
-            <h2>Our team</h2>
-           
-            <div class="team-grid"></div>
-          </section>
-
-          <section class="container" id="faqs">
+<section class="container" id="faqs">
               <div class="accordion-title">
                 <h2>Frequently Asked Questions</h2> 
              </div>
@@ -86,40 +54,3 @@
              </div>
             
           </section>
-
-          <h2>Company details</h2>
-          <p>Get in touch with our team today</p>
-          <div class=""></div>
-          <section class="container" id="contact">
-            <h2> Feedback/contact Form</h2>
-             <!-- Contact form -->
-          <div class="touch-form form-wrap">
-            <!-- action="/action_page.php" -->
-            <form action="#" target="_blank" method="post"> 
-                <div class="inp-name input-wrap">
-                    <input type="text" name="name" placeholder="Full name" required>
-                </div>
-              <div class="inp-email input-wrap">
-                <input type="email" name="email" placeholder="Email" required>
-              </div>
-                <div class="btn-wrap">
-                    <button type="submit" class="rect-btn submit">Submit</button>
-                </div>                                   
-            </form>
-          </div>
-             </section>
-          <section class="container" id="map">
-            <h2>Map</h2>
-            <div class="location"></div>
-          </section>
-
-    </main>
-    
-    @@include('parts/footer.html')
-  </div>
-
-
-  @@include('parts/foot.html')
-  <script src="@@webRoot/assets/js/about.min.js"></script>
-</body>
-</html>
