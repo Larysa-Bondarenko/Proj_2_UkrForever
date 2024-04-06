@@ -7,6 +7,7 @@
   <title>Lessons | Ukrayinska Forever</title>
 
   @@include('parts/head.html')
+  <link rel="stylesheet" href="@@webRoot/assets/plugins/lightslider/css/lightslider.min.css">
   <link rel="stylesheet" href="@@webRoot/assets/css/lessons.min.css">
 </head>
 <body>
@@ -15,9 +16,44 @@
 
     <main>
       <div class="container">
-        <h1>Lessons</h1>
-       <div class="lessons-grid"></div>
+        <h1 id="lessons-link"><a href="#">Lessons</a>
+          </h1>
+       <div class="lessons-grid" id="lessons-grid">
+        
+        <!-- <div class="lesson-card">
+         <p class="level">"B1", "Intermediate"</p>
+          <img src="@@webRoot/assets/images/cat-draw.jpg" alt="">
+          
+          <div class="type-duration">
+            <p class="type">"Reading Lesson", </p> 
+          <p class="duration">60 min</p>
+          </div>           
+          <h4 lang="uk">Тигр у тобі</h4> 
+          <div class="category">"Lifestyle",</div> 
+          <p class="description">
+            "With this lesson, students explore and expand 
+           vocabulary, and dive into a cool discussion about the
+            innovative idea through a fun video",
+          </p> 
+          <div class="subscr-btn">
+            <div class="subscribtion">"Premium",</div> 
+          <button type="button" class="btn show-btn">Show</button> 
+          </div>
+          
+          <p class="plan-link"><a href="plan.html">See the plan</a></p>
+        </div> -->
+
+       </div>
       </div>
+
+      <section class="lesson-slider container">
+        <h3>Slider</h3>
+        <div id="newsSlider-wrap" class="newsSlider-wrap">
+          <ul id="newsSlider" class="newsSlider"></ul>                   
+      </div>
+      </section>
+
+
       <section class="container">
         <h2> Feedback/contact Form</h2>
          </section>
@@ -28,6 +64,9 @@
 
 
   @@include('parts/foot.html')
-  <!-- <script src="@@webRoot/assets/js/lessons.min.js"></script> -->
+  <script src="assets/js/jquery-3.7.0.min.js"></script>
+  <script src="@@webRoot/assets/plugins/lightslider/js/lightslider.min.js"></script>
+  <script src="@@webRoot/assets/js/lessons.min.js"></script>
+  
 </body>
 </html>
