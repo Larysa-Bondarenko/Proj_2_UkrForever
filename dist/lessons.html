@@ -6,15 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lessons | Ukrayinska Forever</title>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-  <link rel="manifest" href="favicon/site.webmanifest">
-  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
-  <link rel="shortcut icon" href="favicon/favicon.ico">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="msapplication-config" content="favicon/browserconfig.xml">
-  <meta name="theme-color" content="#ffffff">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="/assets/favicon/site.webmanifest">
+<link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/assets/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#00aba9">
+<meta name="msapplication-config" content="/assets/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
 
   <meta property="og:locale" content="en">
   <meta property="og:type" content="website">
@@ -27,8 +27,9 @@
   <meta property="og:image:height" content="630">
 
   <link rel="stylesheet" href="./assets/css/style.min.css">
-  <link rel="stylesheet" href="./assets/plugins/lightslider/css/lightslider.min.css">
+ 
   <link rel="stylesheet" href="./assets/css/lessons.min.css">
+ 
 </head>
 <body>
   <div class="page-wrap">
@@ -46,6 +47,16 @@
                 </span>
             </button>
         </div>
+
+    </div> <!--end of panel-top-->
+    <div class="header-buttons">
+      <div class="btn-wrap login-wrap">
+        <button type="button" class="btn login">Login</button>
+    </div>
+      <div class="btn-wrap signup-wrap">
+        <button type="button" class="btn signup">Sign Up</button>
+    </div> 
+
     </div>
     <nav>
         <ul class="mobile-menu">
@@ -92,47 +103,261 @@
 
     <main>
       <div class="container">
-        <h1 id="lessons-link"><a href="#">Lessons</a>
-          </h1>
+        <h2>Explore our lesson plans</h2>
+      <div class="input-flex">
+        <div class="input-wrap">
+          <input type="text" id="level" class="input" placeholder="I need a lesson at ... level">
+        </div>
+        <div class="btn-wrap">
+          <button type="button" class="btn search-btn" id="searchButton" onclick="handleSearchButtonClick()">Search</button>
+        </div> 
+      </div>
+
+      <div class="filteredLessons" id="filteredLessons"></div>
+
        <div class="lessons-grid" id="lessons-grid">
         
-        <!-- <div class="lesson-card">
-         <p class="level">"B1", "Intermediate"</p>
-          <img src="./assets/images/cat-draw.jpg" alt="">
-          
+        <div class="lesson-card">        
+          <img src="./assets/images/bears-couch.jpg" alt="1 bears on couch ">
+          <div class="level">A1/A2 Pre-Intermediate</div>
           <div class="type-duration">
-            <p class="type">"Reading Lesson", </p> 
-          <p class="duration">60 min</p>
+          <div class="type">Standard Lesson</div> 
+          <div class="duration">30 min</div>
           </div>           
-          <h4 lang="uk">Тигр у тобі</h4> 
-          <div class="category">"Lifestyle",</div> 
+          <h4 lang="uk">Молодь у світі</h4> 
+          <div class="category">General</div> 
           <p class="description">
-            "With this lesson, students explore and expand 
+            With this lesson, students explore and expand 
            vocabulary, and dive into a cool discussion about the
-            innovative idea through a fun video",
+            innovative idea through a fun video.
           </p> 
           <div class="subscr-btn">
-            <div class="subscribtion">"Premium",</div> 
+            <div class="subscription">Free</div> 
           <button type="button" class="btn show-btn">Show</button> 
           </div>
-          
-          <p class="plan-link"><a href="plan.html">See the plan</a></p>
-        </div> -->
+        </div>
+        <div class="lesson-card">        
+          <img src="./assets/images/cat-draw.jpg" alt="2. a drawing cat">
+          <div class="level">B1/ Intermediate</div>
+          <div class="type-duration">
+          <div class="type">Reading Lesson </div> 
+          <div class="duration">60 min</div>
+          </div>           
+          <h4 lang="uk">Тигр у тобі</h4> 
+          <div class="category">Lifestyle</div> 
+          <p class="description">
+            With this lesson, students explore and expand 
+           vocabulary, and dive into a cool discussion about the
+            innovative idea through a fun video.
+          </p> 
+          <div class="subscr-btn">
+            <div class="subscription">Premium</div> 
+          <button type="button" class="btn show-btn">Show</button> 
+          </div>
+        </div>
+        <div class="lesson-card">        
+          <img src="./assets/images/coffee-cups.jpg" alt="3. cups with coffee">
+          <div class="level">B2/ Upper Intermediate</div>
+          <div class="type-duration">
+          <div class="type">Speaking Lesson </div> 
+          <div class="duration">45 min</div>
+          </div>           
+          <h4 lang="uk">Час пити каву</h4> 
+          <div class="category">Business</div> 
+          <p class="description">
+            With this lesson, students explore and expand 
+           vocabulary, and dive into a cool discussion about the
+            innovative idea through a fun video.
+          </p> 
+          <div class="subscr-btn">
+            <div class="subscription">Unlimited</div> 
+          <button type="button" class="btn show-btn">Show</button> 
+          </div>
+        </div>
+        <div class="lesson-card">        
+          <img src="./assets/images/gun-woman.jpg" alt="4. woman with gun">
+          <div class="level">C1/ Advanced</div>
+          <div class="type-duration">
+          <div class="type">Flipped Lesson </div> 
+          <div class="duration">30 min</div>
+          </div>           
+          <h4 lang="uk">Розум - це потужна зброя</h4> 
+          <div class="category">Global</div> 
+          <p class="description">
+            With this lesson, students explore and expand 
+           vocabulary, and dive into a cool discussion about the
+            innovative idea through a fun video.
+          </p> 
+          <div class="subscr-btn">
+            <div class="subscription">Free</div> 
+          <button type="button" class="btn show-btn">Show</button> 
+          </div>
+        </div>
+        <div class="lesson-card">        
+          <img src="./assets/images/bears-icecream.jpg" alt="5. bears with ice-cream">
+          <div class="level">A1/A2 Pre-Intermediate</div>
+          <div class="type-duration">
+          <div class="type">Reading Lesson </div> 
+          <div class="duration">30 min</div>
+          </div>           
+          <h4 lang="uk">Як добре бути ведмедем</h4> 
+          <div class="category">General</div> 
+          <p class="description">
+            With this lesson, students explore and expand 
+           vocabulary, and dive into a cool discussion about the
+            innovative idea through a fun video.
+          </p> 
+          <div class="subscr-btn">
+            <div class="subscription">Premium</div> 
+          <button type="button" class="btn show-btn">Show</button> 
+          </div>
+        </div>
+        <div class="lesson-card">        
+          <img src="./assets/images/hands-up.jpg" alt="6. hands risen up">
+          <div class="level">B1/ Intermediate</div>
+          <div class="type-duration">
+          <div class="type">Speaking Lesson </div> 
+          <div class="duration">60 min</div>
+          </div>           
+          <h4 lang="uk">Дістати до зірок</h4> 
+          <div class="category">Global</div> 
+          <p class="description">
+            With this lesson, students explore and expand 
+           vocabulary, and dive into a cool discussion about the
+            innovative idea through a fun video.
+          </p> 
+          <div class="subscr-btn">
+            <div class="subscription">Premium</div> 
+          <button type="button" class="btn show-btn">Show</button> 
+          </div>
+        </div>
+        <div class="lesson-card">        
+          <img src="./assets/images/lion.jpg" alt="7. lion ">
+          <div class="level">B2/ Upper Intermediate</div>
+          <div class="type-duration">
+          <div class="type">Flipped Lesson </div> 
+          <div class="duration">45 min</div>
+          </div>           
+          <h4 lang="uk">Лідерство і комунікація</h4> 
+          <div class="category">Lifestyle</div> 
+          <p class="description">
+            With this lesson, students explore and expand 
+           vocabulary, and dive into a cool discussion about the
+            innovative idea through a fun video.
+          </p> 
+          <div class="subscr-btn">
+            <div class="subscription">Unlimited</div> 
+          <button type="button" class="btn show-btn">Show</button> 
+          </div>
+        </div>
+        <div class="lesson-card">        
+          <img src="./assets/images/minions.jpg" alt="8. minions ">
+          <div class="level">C1/ Advanced</div>
+          <div class="type-duration">
+          <div class="type">Standard Lesson </div> 
+          <div class="duration">45 min</div>
+          </div>           
+          <h4 lang="uk">Робота у команді</h4> 
+          <div class="category">General</div> 
+          <p class="description">
+            With this lesson, students explore and expand 
+           vocabulary, and dive into a cool discussion about the
+            innovative idea through a fun video.
+          </p> 
+          <div class="subscr-btn">
+            <div class="subscription">Free</div> 
+          <button type="button" class="btn show-btn">Show</button> 
+          </div>
+        </div>
+        <div class="lesson-card">        
+          <img src="./assets/images/cubes.webp" alt="9. cubes and balls">
+          <div class="level">A1/A2 Pre-Intermediate</div>
+          <div class="type-duration">
+          <div class="type">Standard Lesson </div> 
+          <div class="duration">60 min</div>
+          </div>           
+          <h4 lang="uk">Форми у житті</h4> 
+          <div class="category">Technology</div> 
+          <p class="description">
+            With this lesson, students explore and expand 
+           vocabulary, and dive into a cool discussion about the
+            innovative idea through a fun video.
+          </p> 
+          <div class="subscr-btn">
+            <div class="subscription">Free</div> 
+          <button type="button" class="btn show-btn">Show</button> 
+          </div>
+        </div>
+        <div class="lesson-card">        
+          <img src="./assets/images/go-for-it.webp" alt="10. go for it">
+          <div class="level">B1/ Intermediate</div>
+          <div class="type-duration">
+          <div class="type">Reading Lesson </div> 
+          <div class="duration">45 min</div>
+          </div>           
+          <h4 lang="uk">Грай у Скребл</h4> 
+          <div class="category">General</div> 
+          <p class="description">
+            With this lesson, students explore and expand 
+           vocabulary, and dive into a cool discussion about the
+            innovative idea through a fun video.
+          </p> 
+          <div class="subscr-btn">
+            <div class="subscription">Premium</div> 
+          <button type="button" class="btn show-btn">Show</button> 
+          </div>
+        </div>
+        <div class="lesson-card">        
+          <img src="./assets/images/hand-with-card.webp" alt="11. hand with a card in it">
+          <div class="level">B2/ Upper Intermediate</div>
+          <div class="type-duration">
+          <div class="type">Flipped Lesson </div> 
+          <div class="duration">30 min</div>
+          </div>           
+          <h4 lang="uk">Тепер ти бачиш мене</h4> 
+          <div class="category">Business</div> 
+          <p class="description">
+            With this lesson, students explore and expand 
+           vocabulary, and dive into a cool discussion about the
+            innovative idea through a fun video.
+          </p> 
+          <div class="subscr-btn">
+            <div class="subscription">Unlimited</div> 
+          <button type="button" class="btn show-btn">Show</button> 
+          </div>
+        </div>
+        <div class="lesson-card">        
+          <img src="./assets/images/welcome.webp" alt="12. welcome">
+          <div class="level">C1/ Advanced</div>
+          <div class="type-duration">
+          <div class="type">Speaking Lesson </div> 
+          <div class="duration">45 min</div>
+          </div>           
+          <h4 lang="uk">Забудьте все , що ви знали до цього</h4> 
+          <div class="category">Lifestyle</div> 
+          <p class="description">
+            With this lesson, students explore and expand 
+           vocabulary, and dive into a cool discussion about the
+            innovative idea through a fun video.
+          </p> 
+          <div class="subscr-btn">
+            <div class="subscription">Free</div> 
+          <button type="button" class="btn show-btn">Show</button> 
+          </div>
+        </div>
 
-       </div>
-      </div>
+       </div> <!-- end of lesson-grid -->
+       
+      </div> <!-- end of the first container-->
 
-      <section class="lesson-slider container">
-        <h3>Slider</h3>
-        <div id="newsSlider-wrap" class="newsSlider-wrap">
-          <ul id="newsSlider" class="newsSlider"></ul>                   
-      </div>
-      </section>
-
-
-      <section class="container">
-        <h2> Feedback/contact Form</h2>
+      <section class="pricing-link">
+        <div class="pricing-link-wrap">
+          <div class="link-txt"> <a href="pricing.html">Subscribe to get our Premium content</a>
+          </div>
+        </div>
+        
          </section>
+ 
     </main>
     
     <footer id="footer">
@@ -230,8 +455,7 @@
     </script>
     
     <script src="./assets/js/all.min.js"></script>
-  <script src="assets/js/jquery-3.7.0.min.js"></script>
-  <script src="./assets/plugins/lightslider/js/lightslider.min.js"></script>
+ 
   <script src="./assets/js/lessons.min.js"></script>
   
 </body>

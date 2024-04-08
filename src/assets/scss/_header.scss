@@ -5,7 +5,7 @@
   left: 0;
   top: 0;
   // background-color: black;
-  background-color: rgba(#000, .7);
+  background-color: $dark-grey-fon; // rgba(#000, .7);
    backdrop-filter: blur(4px);
   height: 60px;
   z-index: 990; 
@@ -108,7 +108,8 @@
 }
 .signup{
   &:hover{
-    text-decoration: underline;
+    // text-decoration: underline;
+    background-color: $dark-pink;
   }
   &:focus{
     text-decoration: none;
@@ -129,6 +130,11 @@
     }
     .menu-panel{
       transform: translateX(0);
+    }
+  }
+  .menu-panel{         
+    .header-buttons{
+      display: none;
     }
   }
   .page-overlay{
@@ -191,11 +197,59 @@
     }
   }
   
-  //responsive
-  // @media  screen and (max-width: 834px){
+  //Responsive
+  @media  screen and (max-width: 896px){
+#main-menu{
+  ul{
+  gap: 32px;
+  }
+}
+    .btn{
+      width: 80px;
+      height: 40px;
+  }
+  #logo a{
+    margin-right: 18px;
+  }
+ 
+}
 
-  // }
+  @media  screen and (max-width: 800px){
+    #header{
+      .hamburger{        
+        display: block;
+       }
+    }
+    #main-menu{
+      display: none;
+    }
+  
+}
 
-  // @media  screen and (max-width: 375px){
+  @media  screen and (max-width: 520px){
+   
+   #header{
+    height: 120px;
     
-  // }
+   }
+   .header-buttons{
+display: none;
+   }
+   .menu-panel{
+
+    .panel-top{
+      height: 120px;      
+    }
+    .header-buttons{
+    background-color: rgba(#000, 0.8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 100px;
+      padding-bottom: 16px;
+    }
+.btn{
+  height: 42px;
+}
+  }
+  }

@@ -1,6 +1,6 @@
 [
 {
-      "level": ["A1/A2", "Pre-Intermediate"],
+      "level": ["A1", "A2", "Pre-Intermediate"],
       "image": "@@webRoot/assets/images/bears-couch.jpg",
       "type": "Standard", 
       "timing": 30,
@@ -40,7 +40,7 @@
       "image": "@@webRoot/assets/images/gun-woman.jpg",
       "type": "Flipped", 
       "timing": 30,
-      "title": "Безпека - це приорітет",
+      "title": "Розум - це потужна зброя",
       "category": "Global",
       "description": "With this lesson, students explore and expand  vocabulary, and dive into a cool discussion about the innovative idea through a fun video",
       "plan": "Free",
@@ -48,11 +48,11 @@
       "lessonUrl": "plan.html"
 },
 {
-      "level": ["A1/A2", "Pre-Intermediate"],
+      "level": ["A1", "A2", "Pre-Intermediate"],
       "image": "@@webRoot/assets/images/bears-icecream.jpg",
       "type": "Reading", 
       "timing": 30,
-      "title": "Хороше-погане морозиво",
+      "title": "Як добре бути ведмедем",
       "category": "General",
       "description": "With this lesson, students explore and expand  vocabulary, and dive into a cool discussion about the innovative idea through a fun video",
       "plan": "Free",
@@ -64,7 +64,7 @@
       "image": "@@webRoot/assets/images/hands-up.jpg",
       "type": "Speaking", 
       "timing": 60,
-      "title": "Літо, море, пісок",
+      "title": "Дістати до зірок",
       "category": "Global",
       "description": "With this lesson, students explore and expand  vocabulary, and dive into a cool discussion about the innovative idea through a fun video",
       "plan": "Premium",
@@ -96,7 +96,7 @@
       "lessonUrl": "plan.html"
 },
 {
-      "level": ["A1/A2", "Pre-Intermediate"],
+      "level": ["A1", "A2", "Pre-Intermediate"],
       "image": "@@webRoot/assets/images/cubes.webp",
       "type": "Standard", 
       "timing": 60,

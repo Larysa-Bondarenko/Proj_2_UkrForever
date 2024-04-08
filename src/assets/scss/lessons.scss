@@ -1,30 +1,98 @@
 @import 'vars';
 
-.lessons-grid{
-    display: grid;
-    grid-template-columns: 3(1fr);
-    gap: 30px;
-    background-color: $white;
-    img{
-        margin-bottom: 16px;
+h2{
+  color: $dark;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: clamp(18px,1.87vw,24px);
+  margin: 30px 0 15px;
+}
+.input-flex{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto 20px;
+  .input-wrap{
+    height: 43px;
+    width: 75%; 
+        &:hover{
+        cursor: pointer;       
+        background-color: $light-grey;
+        border-radius: 16px;
+      }
+     &:focus {
+      cursor: auto;
+      background-color: $light-grey;
+      border-radius: 16px;
+      outline: none;
+     }
+     input{
+      height: 100%;
+      width: 100%;
+      font-size: 18px;
+      line-height: 22px; 
+      font-family: 'Roboto';
+      font-weight: 400;
+      padding: 7px 38px 7px 10px;
+      border-radius: 16px;
+       border: 1px solid $dark;
+      background-color: #fff;
+      &:hover{
+        cursor: pointer;
+        background-color: $light-grey;
+        border-radius: 16px;
+      }
+      &:focus{
+      cursor: auto;
+      background-color: $light-grey;
+      outline: none;
+      border-radius: 16px;
+      }
+     }
+}
+}
+
+//For Answer from filter
+.filteredLessons{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+  background-color: $white;
+  padding: 16px 0;
+  margin-bottom: 10px;
+  div{
+    // border: 1px solid $grey69;
+    border-radius: 4px;
+      background-color: $white;
+      color: $dark;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      padding: 10px 14px 20px;
+      img{      
+        aspect-ratio: 27/20;
+        margin-bottom: 10px;
     }
     .level{
-       margin-bottom: 16px;
+       margin-bottom: 10px;
     }
     h4{
+      height: 42px;
         font-size: clamp(18px,1.87vw,22px);
-        margin-bottom: 16px;
+        margin-bottom: 14px;
     }
     .category{
         color: $tomato;
         font-size: clamp(16px,1.87vw,18px);
-        margin-bottom: 24px;
+        margin-bottom: 16px;
     }
    .description{
     margin-bottom: 40px;
    }
    .subscription{
     font-size: clamp(18px,1.87vw,22px);
+    font-weight: 600;
    }
    .show-btn{
     border: none;
@@ -46,33 +114,137 @@
      filter: invert(100%);
     }
    }
+  }
+}
+
+//Static lessons grid
+.lessons-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    background-color: $white;
+    padding: 16px 0;
+    margin-bottom: 50px;
+   
 }
 .lesson-card{
+  border: 1px solid $grey69;
+  border-radius: 4px;
     background-color: $white;
     color: $dark;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: clamp(16px,1.87vw,18px);
-    padding: 10px 5px 20px;
+    font-size: 16px;
+    padding: 10px 14px 20px;
+    img{
+    
+      aspect-ratio: 27/20;
+      margin-bottom: 10px;
+  }
+  .level{
+     margin-bottom: 10px;
+  }
+  h4{
+    height: 42px;
+      font-size: clamp(18px,1.87vw,22px);
+      margin-bottom: 14px;
+  }
+  .category{
+      color: $tomato;
+      font-size: clamp(16px,1.87vw,18px);
+      margin-bottom: 16px;
+  }
+ .description{
+  margin-bottom: 40px;
+ }
+ .subscription{
+  font-size: clamp(18px,1.87vw,22px);
+  font-weight: 600;
+ }
+ .show-btn{
+  border: none;
+  color: #fff;
+  border-radius: 16px;
+  width: 100px;
+  height: 35px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: $blue-green;
+  &:hover, &:focus{
+    cursor: pointer;
+    color: $white;
+    background-color: $blue-btn-active;
+  }
+  &:active{
+   filter: invert(100%);
+  }
+ }
 }
 .type-duration{
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 35px;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 }
 .subscr-btn{
-    display: flex;justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+
 }
+//for Pricing link
+.pricing-link{
+  background-color: $dark-grey-fon;
+  background-image: url(../images/blue-strokes.png);
+background-size:cover;
+  background-repeat: no-repeat;
+}
+.pricing-link-wrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 76px 5px;
+  margin: 0 auto 50px;
+
+  a{
+    color: $white;
+    text-decoration: none;
+    font-size: 22px;
+    &:hover, &:focus{
+      cursor: pointer;
+      color: $white;
+      text-decoration: underline;
+    }
+    &:active{
+     filter: invert(100%);
+    }
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //Slider News
 .news{
     position: relative;
       background-color: $blue;
-      background-image: url(../images/news-bg.png);
-      background-repeat: no-repeat;
+      // background-image: url(../images/news-bg.png);
+      // background-repeat: no-repeat;
   }
   .news .h2-bloc{
     margin-bottom: 84px;

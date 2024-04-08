@@ -104,6 +104,11 @@ function movePlugins(){
     .pipe(dest(DIST_ASSETS+'plugins/'))
 }
 
+function moveData(){
+  return src(SRC_ASSETS+'data/**/*')
+    .pipe(dest(DIST_ASSETS+'data/'))
+}
+
 /*
 https://medium.com/superhighfives/deploying-to-github-pages-with-gulp-c06efc527de8
 Deploy is available only after build
@@ -113,7 +118,7 @@ function deploy(){
     .pipe(ghPages());
 }
 
-const move = parallel(moveFavicon, movePlugins)
+const move = parallel(moveFavicon, movePlugins, moveData)
 
 const build = series(cleanDist, parallel(buildHTML, buildStyles, buildScripts, buildPageScripts, modernImages, convertFonts, move))
 

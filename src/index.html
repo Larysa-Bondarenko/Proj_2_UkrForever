@@ -5,9 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ukrayinska Forever</title>
-  <meta name="description" content="">
+  <meta name="description" content="The best website to learn Ukrainian with ease and fun">
 
   @@include('parts/head.html')
+   <link rel="stylesheet" href="@@webRoot/assets/plugins/lightslider/css/lightslider.min.css">
   <link rel="stylesheet" href="@@webRoot/assets/css/main.min.css">
 </head>
 <body>
@@ -15,6 +16,205 @@
     @@include('parts/header.html')
 
     <main>
+     
+      <section class="hero ">
+        <div class="hero-flex">
+            <div class="slogan">
+                <h1>Ukrayinska Forever boosts your Ukrainian excellence</h1>
+            </div> 
+            <div class="txt-n-btn">
+                <p>
+                  Whether you're a beginner or an advanced learner we offer the perfect
+                   opportunity to enhance your  skills effortlessly.
+                   Hereafter Ukrainian will stay in your heart and mind forever.
+                </p>
+                 <div class="btn-wrap started-wrap">
+                    <button type="button" class="btn get-started">Get Started</button>
+                </div>
+            </div>   
+        </div>  
+        <div class="img-wrap hero-img-wrap">
+          <img class="hero-img" src="@@webRoot/assets/images/study-place.svg" alt="laptop on a table">
+      </div>              
+    </section>
+
+    <section class="discover">
+        <div class="container discover-flex">
+            <div class="img-wrap discover-img-wrap">
+                <img class="discover-img" src="assets/images/tabletman.svg" alt="laptop on a table">
+            </div>
+            <div class="txt-n-btn">                       
+                <h2>Discover the power of creative freedom with Ukrayinska Forever.</h2>
+                 <p>Learn Ukrainian using thought-provoking, 
+                    engaging and topical lesson plans based on authentic materials.
+                     Get high-quality Ukrainian classes for adults,
+                     both online and offline.</p>
+                 <div class="btn-wrap explore-wrap">
+                    <button type="button" class="btn explore">Explore</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="topics container">        
+            <h2>Browse lesson plans by topic</h2>
+            <div class="topics-grid" lang="uk">
+                  <ul class="topic-list">
+                    <li class="ed"><a href="#">Навчання</a></li>
+                    <li class="travel"><a href="#">Подорожі</a></li>
+                    <li class="first"><a href="#">Перший місяць</a></li>
+                    <li class="food"><a href="#">Їжа</a></li>
+                    <li class="trans"><a href="#">Транспорт</a></li>
+                    <li class="meet"><a href="#">Знайомство</a></li>
+                    <li class="idiom"><a href="#">Ідіоми</a></li>
+                    <li class="health"><a href="#">Здоров'я</a></li>
+                    <li class="cult"><a href="#">Культура</a></li>
+                    <li class="work"><a href="#">Робота</a></li>
+                    <li class="life"> <a href="#">Стиль життя</a></li>
+                    <li class="daily"><a href="#">Побут</a></li>
+                  </ul>
+            </div>
+        
+    </section>
+
+    <!-- <section class="lesson-slider container">
+        <h3>Our latest lesson plans</h3>
+        <div id="lessonSlider-wrap" class="lessonSlider-wrap">
+          <ul id="lessonSlider" class="lessonSlider">
+            <li class="slider-item">
+              <img src="@@webRoot/assets/images/bears-couch.jpg" alt="1 bears on couch ">
+              <div class="level">A1/A2 Pre-Intermediate</div>
+              <div class="type-duration">
+              <div class="type">Standard Lesson</div> 
+              <div class="duration">30 min</div>
+              </div>           
+              <h4 lang="uk">Молодь у світі</h4> 
+              <div class="category">General</div> 
+              <p class="description">
+                With this lesson, students explore and expand 
+               vocabulary, and dive into a cool discussion about the
+                innovative idea through a fun video.
+              </p> 
+              <div class="subscr-btn">
+                <div class="subscription">Free</div> 
+              <button type="button" class="btn show-btn">Show</button> 
+              </div>
+            </li>
+            <li class="slider-item">
+              <img src="@@webRoot/assets/images/cat-draw.jpg" alt="2 a drawing cat">
+          <div class="level">B1/ Intermediate</div>
+          <div class="type-duration">
+          <div class="type">Reading Lesson </div> 
+          <div class="duration">60 min</div>
+          </div>           
+          <h4 lang="uk">Тигр у тобі</h4> 
+          <div class="category">Lifestyle</div> 
+          <p class="description">
+            With this lesson, students explore and expand 
+           vocabulary, and dive into a cool discussion about the
+            innovative idea through a fun video.
+          </p> 
+          <div class="subscr-btn">
+            <div class="subscription">Premium</div> 
+          <button type="button" class="btn show-btn">Show</button> 
+          </div>
+            </li>
+            <li class="slider-item">
+              <img src="@@webRoot/assets/images/coffee-cups.jpg" alt="3 cups with coffee">
+          <div class="level">B2/ Upper Intermediate</div>
+          <div class="type-duration">
+          <div class="type">Speaking Lesson </div> 
+          <div class="duration">45 min</div>
+          </div>           
+          <h4 lang="uk">Час пити каву</h4> 
+          <div class="category">Business</div> 
+          <p class="description">
+            With this lesson, students explore and expand 
+           vocabulary, and dive into a cool discussion about the
+            innovative idea through a fun video.
+          </p> 
+          <div class="subscr-btn">
+            <div class="subscription">Unlimited</div> 
+          <button type="button" class="btn show-btn">Show</button> 
+          </div>
+            </li>
+            <li class="slider-item">
+              <img src="@@webRoot/assets/images/gun-woman.jpg" alt="4. woman with gun">
+              <div class="level">C1/ Advanced</div>
+              <div class="type-duration">
+              <div class="type">Flipped Lesson </div> 
+              <div class="duration">30 min</div>
+              </div>           
+              <h4 lang="uk">Розум - це потужна зброя</h4> 
+              <div class="category">Global</div> 
+              <p class="description">
+                With this lesson, students explore and expand 
+               vocabulary, and dive into a cool discussion about the
+                innovative idea through a fun video.
+              </p> 
+              <div class="subscr-btn">
+                <div class="subscription">Free</div> 
+              <button type="button" class="btn show-btn">Show</button> 
+              </div>
+            </li>
+            <li class="slider-item">
+              <img src="@@webRoot/assets/images/bears-icecream.jpg" alt="5. bears with ice-cream">
+          <div class="level">A1/A2 Pre-Intermediate</div>
+          <div class="type-duration">
+          <div class="type">Reading Lesson </div> 
+          <div class="duration">30 min</div>
+          </div>           
+          <h4 lang="uk">Як добре бути ведмедем</h4> 
+          <div class="category">General</div> 
+          <p class="description">
+            With this lesson, students explore and expand 
+           vocabulary, and dive into a cool discussion about the
+            innovative idea through a fun video.
+          </p> 
+          <div class="subscr-btn">
+            <div class="subscription">Premium</div> 
+          <button type="button" class="btn show-btn">Show</button> 
+          </div>
+            </li>
+            <li class="slider-item">
+              <img src="@@webRoot/assets/images/minions.jpg" alt="8. minions ">
+              <div class="level">C1/ Advanced</div>
+              <div class="type-duration">
+              <div class="type">Standard Lesson </div> 
+              <div class="duration">45 min</div>
+              </div>           
+              <h4 lang="uk">Робота у команді</h4> 
+              <div class="category">General</div> 
+              <p class="description">
+                With this lesson, students explore and expand 
+               vocabulary, and dive into a cool discussion about the
+                innovative idea through a fun video.
+              </p> 
+              <div class="subscr-btn">
+                <div class="subscription">Free</div> 
+              <button type="button" class="btn show-btn">Show</button> 
+              </div>
+            </li>
+          </ul>                   
+      </div>
+      </section> -->
+
+
+    </main>
+    
+    @@include('parts/footer.html')
+  </div>
+
+  
+  <script src="assets/js/jquery-3.7.0.min.js"></script>
+  <script src="assets/plugins/lightslider/js/lightslider.min.js"></script>
+  <script src="@@webRoot/assets/js/main.min.js"></script>
+  @@include('parts/foot.html')
+</body>
+</html>
+
+
+
       <!-- <h1>Hello world!</h1>
       <div class="flex">
         <picture>
@@ -31,74 +231,3 @@
 
         <img src="@@webRoot/assets/images/twitter.svg" alt="">
       </div> -->
-
-      <h1>Ukrayinska Forever</h1>
-      <section class="hero">
-        <div class="container hero-flex">
-            <div class="txt-part">
-                <h1>Ukrayinska Forever boosts your Ukrainian excellence</h1>
-                 <p>Hereafter Ukrainian will stay in your heart and mind forever</p>
-                 <div class="btn-wrap started-wrap">
-                    <button type="button" class="btn get-started">Get Started</button>
-                </div>
-            </div>
-            <div class="img-wrap hero-img-wrap">
-                <img class="hero-img" src="@@webRoot/assets/images/study-place.svg" alt="laptop on a table">
-            </div>
-        </div>                
-    </section>
-    <section class="discover">
-        <div class="container discover-flex">
-            <div class="img-wrap discover-img-wrap">
-                <img class="discover-img" src="assets/images/tabletman.svg" alt="laptop on a table">
-            </div>
-            <div class="txt-part">                       
-                <h2>Discover the power of creative freedom with Ukrayinska Forever.</h2>
-                 <p>Learn Ukrainian using thought-provoking, 
-                    engaging and topical lesson plans based on authentic materials.
-                     Get high-quality Ukrainian classes for adults,
-                     both online and offline.</p>
-                 <div class=" btn-wrap about-wrap">
-                    <button type="button" class="btn about"><a href="about.html" target="_self">About Us</a></button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="slider container" id="lessons">
-      <h2>Lessons Slider</h2>
-      <div class="LightSlider"></div>
-    </section>
-    <section class="topics">
-        <div class="container">
-            <h2>Browse lessons by topic</h2>
-            <div class="topics-grid" lang="uk">
-                  <ul class="topic-list">
-                    <li><a href="#">Навчання</a></li>
-                    <li><a href="#">Подорожі</a></li>
-                    <li><a href="#">Перший місяць</a></li>
-                    <li><a href="#">Їжа</a></li>
-                    <li><a href="#">Транспорт</a></li>
-                    <li><a href="#">Знайомство</a></li>
-                    <li><a href="#">Ідіоми</a></li>
-                    <li><a href="#">Здоров'я</a></li>
-                    <li><a href="#">Культура</a></li>
-                    <li><a href="#">Робота</a></li>
-                    <li><a href="#">Стиль життя</a></li>
-                    <li><a href="#">Побут</a></li>
-                  </ul>
-            </div>
-        </div>
-    </section>
-
-      <div class="form container">
-        <h2>Registration form</h2>
-      </div>
-    </main>
-    
-    @@include('parts/footer.html')
-  </div>
-
-  @@include('parts/foot.html')
-  <script src="@@webRoot/assets/js/main.min.js"></script>
-</body>
-</html>
