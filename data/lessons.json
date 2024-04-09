@@ -1,0 +1,150 @@
+[
+{
+      "level": ["A1", "A2", "Pre-Intermediate"],
+      "image": "/assets/images/bears-couch.jpg",
+      "type": "Standard Lesson", 
+      "timing": "30 min",
+      "title": "Молодь у світі",
+      "category": "General",
+      "description": "With this lesson, students explore and expand vocabulary, and dive into a cool discussion about the innovative idea through a fun video",
+      "plan": "Free",
+      "buttonText": "Show",
+      "lessonUrl": "/plan.html"
+},
+{
+      "level": ["B1", "Intermediate"],
+      "image": "/assets/images/cat-draw.jpg",
+      "type": "Reading Lesson", 
+      "timing": "60 min",
+      "title": "Тигр у тобі",
+      "category": "Lifestyle",
+      "description": "With this lesson, students explore and expand  vocabulary, and dive into a cool discussion about the innovative idea through a fun video",
+      "plan": "Premium",
+      "buttonText": "Show",
+      "lessonUrl": "/plan.html"
+},
+{
+      "level": ["B2", "Upper Intermediate"],
+      "image": "/assets/images/coffee-cups.jpg",
+      "type": "Speaking Lesson", 
+      "timing": "45 min",
+      "title": "Час пити каву",
+      "category": "Business",
+      "description": "With this lesson, students explore and expand  vocabulary, and dive into a cool discussion about the innovative idea through a fun video",
+      "plan": "Unlimited",
+      "buttonText": "Show",
+      "lessonUrl": "/plan.html"
+},
+{
+      "level": ["C1", "Advanced"],
+      "image": "/assets/images/gun-woman.jpg",
+      "type": "Flipped Lesson", 
+      "timing": "30 min",
+      "title": "Розум - це потужна зброя",
+      "category": "Global",
+      "description": "With this lesson, students explore and expand  vocabulary, and dive into a cool discussion about the innovative idea through a fun video",
+      "plan": "Free",
+      "buttonText": "Show",
+      "lessonUrl": "/plan.html"
+},
+{
+      "level": ["A1", "A2", "Pre-Intermediate"],
+      "image": "/assets/images/bears-icecream.jpg",
+      "type": "Reading Lesson", 
+      "timing": "30 min",
+      "title": "Як добре бути ведмедем",
+      "category": "General",
+      "description": "With this lesson, students explore and expand  vocabulary, and dive into a cool discussion about the innovative idea through a fun video",
+      "plan": "Free",
+      "buttonText": "Show",
+      "lessonUrl": "/plan.html"
+},
+{
+      "level": ["B1", "Intermediate"],
+      "image": "/assets/images/hands-up.jpg",
+      "type": "Speaking Lesson", 
+      "timing": "60 min",
+      "title": "Дістати до зірок",
+      "category": "Global",
+      "description": "With this lesson, students explore and expand  vocabulary, and dive into a cool discussion about the innovative idea through a fun video",
+      "plan": "Premium",
+      "buttonText": "Show",
+      "lessonUrl": "/plan.html"
+},
+{
+      "level": ["B2", "Upper Intermediate"],
+      "image": "/assets/images/lion.jpg",
+      "type": "Flipped Lesson", 
+      "timing": "45 min",
+      "title": "Лідерство і комунікація",
+      "category": "Lifestyle",
+      "description": "With this lesson, students explore and expand  vocabulary, and dive into a cool discussion about the innovative idea through a fun video",
+      "plan": "Unlimited",
+      "buttonText": "Show",
+      "lessonUrl": "/plan.html"
+},
+{
+      "level": ["C1", "Advanced"],
+      "image": "/assets/images/minions.jpg",
+      "type": "Standard Lesson", 
+      "timing": "45 min",
+      "title": "Робота у команді",
+      "category": "General",
+      "description": "With this lesson, students explore and expand  vocabulary, and dive into a cool discussion about the innovative idea through a fun video",
+      "plan": "Free",
+      "buttonText": "Show",
+      "lessonUrl": "/plan.html"
+},
+{
+      "level": ["A1", "A2", "Pre-Intermediate"],
+      "image": "/assets/images/cubes.webp",
+      "type": "Standard Lesson", 
+      "timing": "60 min",
+      "title": "Форми у житті",
+      "category": "Technology",
+      "description": "With this lesson, students explore and expand  vocabulary, and dive into a cool discussion about the innovative idea through a fun video",
+      "plan": "Free",
+      "buttonText": "Show",
+      "lessonUrl": "/plan.html"
+},
+{
+      "level": ["B1", "Intermediate"],
+      "image": "/assets/images/go-for-it.webp",
+      "type": "Reading Lesson", 
+      "timing": "45 min",
+      "title": "Грай у Скребл",
+      "category": "General",
+      "description": "With this lesson, students explore and expand  vocabulary, and dive into a cool discussion about the innovative idea through a fun video",
+      "plan": "Premium",
+      "buttonText": "Show",
+      "lessonUrl": "/plan.html"
+},
+{
+      "level": ["B2", "Upper Intermediate"],
+      "image": "/assets/images/hand-with-card.webp",
+      "type": "Flipped Lesson", 
+      "timing": "30 min",
+      "title": "Тепер ти бачиш мене",
+      "category": "Business",
+      "description": "With this lesson, students explore and expand  vocabulary, and dive into a cool discussion about the innovative idea through a fun video",
+      "plan": "Unlimited",
+      "buttonText": "Show",
+      "lessonUrl": "/plan.html"
+},
+{
+      "level": ["C1", "Advanced"],
+      "image": "/assets/images/welcome.webp",
+      "type": "Speaking Lesson", 
+      "timing": "45 min",
+      "title": "Забудьте все , що ви знали до цього",
+      "category": "Lifestyle",
+      "description": "With this lesson, students explore and expand  vocabulary, and dive into a cool discussion about the innovative idea through a fun video",
+      "plan": "Free",
+      "buttonText": "Show",
+      "lessonUrl": "/plan.html"
+}
+]
+
+
+  
+  
