@@ -37,7 +37,7 @@
 },
 {
       "level": ["C1", "Advanced"],
-      "image": "/assets/images/gun-woman.jpg",
+      "image": "assets/images/gun-woman.jpg",
       "type": "Flipped Lesson", 
       "timing": "30 min",
       "title": "Розум - це потужна зброя",
@@ -49,7 +49,7 @@
 },
 {
       "level": ["A1", "A2", "Pre-Intermediate"],
-      "image": "/assets/images/bears-icecream.jpg",
+      "image": "assets/images/bears-icecream.jpg",
       "type": "Reading Lesson", 
       "timing": "30 min",
       "title": "Як добре бути ведмедем",
@@ -61,7 +61,7 @@
 },
 {
       "level": ["B1", "Intermediate"],
-      "image": "/assets/images/hands-up.jpg",
+      "image": "assets/images/hands-up.jpg",
       "type": "Speaking Lesson", 
       "timing": "60 min",
       "title": "Дістати до зірок",
@@ -73,7 +73,7 @@
 },
 {
       "level": ["B2", "Upper Intermediate"],
-      "image": "/assets/images/lion.jpg",
+      "image": "assets/images/lion.jpg",
       "type": "Flipped Lesson", 
       "timing": "45 min",
       "title": "Лідерство і комунікація",
@@ -85,7 +85,7 @@
 },
 {
       "level": ["C1", "Advanced"],
-      "image": "/assets/images/minions.jpg",
+      "image": "assets/images/minions.jpg",
       "type": "Standard Lesson", 
       "timing": "45 min",
       "title": "Робота у команді",
@@ -97,7 +97,7 @@
 },
 {
       "level": ["A1", "A2", "Pre-Intermediate"],
-      "image": "/assets/images/cubes.webp",
+      "image": "assets/images/cubes.webp",
       "type": "Standard Lesson", 
       "timing": "60 min",
       "title": "Форми у житті",
@@ -109,7 +109,7 @@
 },
 {
       "level": ["B1", "Intermediate"],
-      "image": "/assets/images/go-for-it.webp",
+      "image": "assets/images/go-for-it.webp",
       "type": "Reading Lesson", 
       "timing": "45 min",
       "title": "Грай у Скребл",
@@ -121,7 +121,7 @@
 },
 {
       "level": ["B2", "Upper Intermediate"],
-      "image": "/assets/images/hand-with-card.webp",
+      "image": "assets/images/hand-with-card.webp",
       "type": "Flipped Lesson", 
       "timing": "30 min",
       "title": "Тепер ти бачиш мене",
@@ -133,7 +133,7 @@
 },
 {
       "level": ["C1", "Advanced"],
-      "image": "/assets/images/welcome.webp",
+      "image": "assets/images/welcome.webp",
       "type": "Speaking Lesson", 
       "timing": "45 min",
       "title": "Забудьте все , що ви знали до цього",
