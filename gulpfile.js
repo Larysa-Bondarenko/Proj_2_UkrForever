@@ -105,8 +105,8 @@ function movePlugins(){
 }
 
 function moveData(){
-  return src(SRC_ASSETS+'data/**/*')
-    .pipe(dest(DIST_ASSETS+'data/'))
+  return src('./src/data/*')
+    .pipe(dest('./dist/data/'))
 }
 
 /*

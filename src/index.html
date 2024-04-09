@@ -8,7 +8,7 @@
   <meta name="description" content="The best website to learn Ukrainian with ease and fun">
 
   @@include('parts/head.html')
-   <link rel="stylesheet" href="@@webRoot/assets/plugins/lightslider/css/lightslider.min.css">
+   <link rel="stylesheet" href="@@webRoot/assets/plugins/light-slider/css/lightslider.min.css">
   <link rel="stylesheet" href="@@webRoot/assets/css/main.min.css">
 </head>
 <body>
@@ -57,7 +57,7 @@
     </section>
 
     <section class="topics container">        
-            <h2>Browse lesson plans by topic</h2>
+            <h3>Browse lesson plans by topic</h3>
             <div class="topics-grid" lang="uk">
                   <ul class="topic-list">
                     <li class="ed"><a href="#">Навчання</a></li>
@@ -77,141 +77,30 @@
         
     </section>
 
-    <!-- <section class="lesson-slider container">
-        <h3>Our latest lesson plans</h3>
-        <div id="lessonSlider-wrap" class="lessonSlider-wrap">
-          <ul id="lessonSlider" class="lessonSlider">
-            <li class="slider-item">
-              <img src="@@webRoot/assets/images/bears-couch.jpg" alt="1 bears on couch ">
-              <div class="level">A1/A2 Pre-Intermediate</div>
-              <div class="type-duration">
-              <div class="type">Standard Lesson</div> 
-              <div class="duration">30 min</div>
-              </div>           
-              <h4 lang="uk">Молодь у світі</h4> 
-              <div class="category">General</div> 
-              <p class="description">
-                With this lesson, students explore and expand 
-               vocabulary, and dive into a cool discussion about the
-                innovative idea through a fun video.
-              </p> 
-              <div class="subscr-btn">
-                <div class="subscription">Free</div> 
-              <button type="button" class="btn show-btn">Show</button> 
-              </div>
-            </li>
-            <li class="slider-item">
-              <img src="@@webRoot/assets/images/cat-draw.jpg" alt="2 a drawing cat">
-          <div class="level">B1/ Intermediate</div>
-          <div class="type-duration">
-          <div class="type">Reading Lesson </div> 
-          <div class="duration">60 min</div>
-          </div>           
-          <h4 lang="uk">Тигр у тобі</h4> 
-          <div class="category">Lifestyle</div> 
-          <p class="description">
-            With this lesson, students explore and expand 
-           vocabulary, and dive into a cool discussion about the
-            innovative idea through a fun video.
-          </p> 
-          <div class="subscr-btn">
-            <div class="subscription">Premium</div> 
-          <button type="button" class="btn show-btn">Show</button> 
-          </div>
-            </li>
-            <li class="slider-item">
-              <img src="@@webRoot/assets/images/coffee-cups.jpg" alt="3 cups with coffee">
-          <div class="level">B2/ Upper Intermediate</div>
-          <div class="type-duration">
-          <div class="type">Speaking Lesson </div> 
-          <div class="duration">45 min</div>
-          </div>           
-          <h4 lang="uk">Час пити каву</h4> 
-          <div class="category">Business</div> 
-          <p class="description">
-            With this lesson, students explore and expand 
-           vocabulary, and dive into a cool discussion about the
-            innovative idea through a fun video.
-          </p> 
-          <div class="subscr-btn">
-            <div class="subscription">Unlimited</div> 
-          <button type="button" class="btn show-btn">Show</button> 
-          </div>
-            </li>
-            <li class="slider-item">
-              <img src="@@webRoot/assets/images/gun-woman.jpg" alt="4. woman with gun">
-              <div class="level">C1/ Advanced</div>
-              <div class="type-duration">
-              <div class="type">Flipped Lesson </div> 
-              <div class="duration">30 min</div>
-              </div>           
-              <h4 lang="uk">Розум - це потужна зброя</h4> 
-              <div class="category">Global</div> 
-              <p class="description">
-                With this lesson, students explore and expand 
-               vocabulary, and dive into a cool discussion about the
-                innovative idea through a fun video.
-              </p> 
-              <div class="subscr-btn">
-                <div class="subscription">Free</div> 
-              <button type="button" class="btn show-btn">Show</button> 
-              </div>
-            </li>
-            <li class="slider-item">
-              <img src="@@webRoot/assets/images/bears-icecream.jpg" alt="5. bears with ice-cream">
-          <div class="level">A1/A2 Pre-Intermediate</div>
-          <div class="type-duration">
-          <div class="type">Reading Lesson </div> 
-          <div class="duration">30 min</div>
-          </div>           
-          <h4 lang="uk">Як добре бути ведмедем</h4> 
-          <div class="category">General</div> 
-          <p class="description">
-            With this lesson, students explore and expand 
-           vocabulary, and dive into a cool discussion about the
-            innovative idea through a fun video.
-          </p> 
-          <div class="subscr-btn">
-            <div class="subscription">Premium</div> 
-          <button type="button" class="btn show-btn">Show</button> 
-          </div>
-            </li>
-            <li class="slider-item">
-              <img src="@@webRoot/assets/images/minions.jpg" alt="8. minions ">
-              <div class="level">C1/ Advanced</div>
-              <div class="type-duration">
-              <div class="type">Standard Lesson </div> 
-              <div class="duration">45 min</div>
-              </div>           
-              <h4 lang="uk">Робота у команді</h4> 
-              <div class="category">General</div> 
-              <p class="description">
-                With this lesson, students explore and expand 
-               vocabulary, and dive into a cool discussion about the
-                innovative idea through a fun video.
-              </p> 
-              <div class="subscr-btn">
-                <div class="subscription">Free</div> 
-              <button type="button" class="btn show-btn">Show</button> 
-              </div>
-            </li>
-          </ul>                   
-      </div>
-      </section> -->
 
+  @@include('parts/slider.html')
 
     </main>
     
     @@include('parts/footer.html')
   </div>
 
-  
-  <script src="assets/js/jquery-3.7.0.min.js"></script>
-  <script src="assets/plugins/lightslider/js/lightslider.min.js"></script>
-  <script src="@@webRoot/assets/js/main.min.js"></script>
   @@include('parts/foot.html')
+  
+  
+  <script src="assets/js/jquery-3.7.1.min.js"></script>
+  <script src="@@webRoot/assets/plugins/light-slider/js/lightslider.min.js"></script>
+  <script src="@@webRoot/assets/js/slider.min.js"></script>
+  <script src="@@webRoot/assets/js/main.min.js"></script>
+  
 </body>
 </html>
+
+
+
+
+
+
 
 
 

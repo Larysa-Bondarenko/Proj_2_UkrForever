@@ -75,3 +75,140 @@ body{
     text-align: center;
 }
 }
+
+//For slider
+h3{
+    font-size: clamp(18px,3.78vw,26px);
+   
+    font-weight: 600;
+    
+    margin-bottom: 30px;
+  }
+  .lesson-slider{
+    position: relative; 
+  }
+  .lessonSlider-wrap{   
+    width: 100%;
+    padding: 0 30px 40px;
+    margin-bottom: 100px;
+  }
+  .lessonslider-wrap{
+      .lSSlideOuter {
+          // position: relative; //????
+          .lSPager.lSpg {
+            display: flex;
+            justify-content: center;
+            // position: absolute;
+            // right: 20px;
+            // top: 0;
+            gap: 40px;   //is it needed
+            >li {
+              &.active, &:hover {
+                a {
+                  cursor: pointer;
+                  background-color: white;
+                }
+              }
+              a {
+                border: 1px solid white;
+                border-radius: 50%;
+                background-color: transparent;
+                
+              }
+            } 
+          }
+        }
+  }
+  // .custom-buttons {  
+  //   .btn-prev, .btn-next{
+  //     position: absolute;
+  //     top: 280px;
+  //     border: 1px solid $dark;
+  //   border-radius: 50%;
+  //   width: 40px;
+  //   aspect-ratio: 1;
+  //   background-color: $pink;
+  //   &:hover, &:focus{
+  //     cursor: pointer;
+  //     background-color: $dark-pink;
+  //   }
+  //   &:active{
+  //     filter: invert(100%);
+  //   }
+  //   }
+  // }
+  // .btn-prev{
+  //   transform: rotate(90deg);
+  //   left: -20px;
+  //  }
+  // .btn-next{
+  //   transform: rotate(-90deg);
+  //   right: -20px;
+  // }
+  
+  //For each slide
+  .lesson-card{
+    border: 1px solid $grey69;
+    border-radius: 4px;
+      background-color: $white;
+      color: $dark;
+      font-size: 16px;
+      padding: 10px 14px 20px;
+      img{      
+        aspect-ratio: 27/20;
+        margin-bottom: 10px;
+    }
+    .level{
+       margin-bottom: 10px;
+    }
+    h4{
+      height: 42px;
+        font-size: clamp(18px,1.87vw,22px);
+        margin-bottom: 14px;
+    }
+    .category{
+        color: $tomato;
+        font-size: clamp(16px,1.87vw,18px);
+        margin-bottom: 16px;
+    }
+   .description{
+    margin-bottom: 40px;
+   }
+   .subscription{
+    font-size: clamp(18px,1.87vw,22px);
+    font-weight: 600;
+   }
+   .show-btn{
+    border: none;
+    color: #fff;
+    border-radius: 16px;
+    width: 100px;
+    height: 35px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    background-color: $blue-green;
+    &:hover, &:focus{
+      cursor: pointer;
+      color: $white;
+      background-color: $blue-btn-active;
+    }
+    &:active{
+     filter: invert(100%);
+    }
+   }
+  }
+  .type-duration{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 35px;
+      margin-bottom: 16px;
+  }
+  .subscr-btn{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  
+  }

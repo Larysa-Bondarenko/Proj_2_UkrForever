@@ -123,12 +123,12 @@ input{
 }
 
 #books-list{
-    display: grid;
+ display: grid;
 grid-template-columns: repeat(3, 1fr);
 gap: 35px 30px;
 }
 .img-top {
-    // aspect-ratio: 26/40;
+    // object-fit: contain;
     height: 100vh;
     border-radius: 8px; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 

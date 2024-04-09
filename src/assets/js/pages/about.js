@@ -1,45 +1,30 @@
 /* Scripts for About page */
-//accordion
-$(document).ready(function(){
-    $('.accordion-content').hide();
-    $('#accordion-btn-1').on('click', () =>{
-         $('#accordion-content-1').toggle();
-         $('#accordion-content-2').hide();
-         $('#accordion-content-3').hide();
-         $('#accordion-content-4').hide();
-         $('#down1').toggleClass('rotate');
-         $('#down2').removeClass('rotate');
-         $('#down3').removeClass('rotate');
-         $('#down4').removeClass('rotate');
-    });
-    $('#accordion-btn-2').on('click', ()=>{
-        $('#accordion-content-2').toggle();
-        $('#accordion-content-1').hide();
-        $('#accordion-content-3').hide();
-        $('#accordion-content-4').hide();
-        $('#down2').toggleClass('rotate');
-        $('#down1').removeClass('rotate');
-        $('#down3').removeClass('rotate');
-        $('#down4').removeClass('rotate');
-    })
-    $('#accordion-btn-3').on('click', ()=>{
-        $('#accordion-content-3').toggle();
-        $('#accordion-content-2').hide();
-        $('#accordion-content-1').hide();
-        $('#accordion-content-4').hide();
-        $('#down3').toggleClass('rotate');
-        $('#down2').removeClass('rotate');
-        $('#down1').removeClass('rotate');
-        $('#down4').removeClass('rotate');
-    })
-    $('#accordion-btn-4').on('click', ()=>{
-        $('#accordion-content-4').toggle();
-        $('#accordion-content-2').hide();
-        $('#accordion-content-3').hide();
-        $('#accordion-content-1').hide();
-        $('#down4').toggleClass('rotate');
-        $('#down2').removeClass('rotate');
-        $('#down3').removeClass('rotate');
-        $('#down1').removeClass('rotate');
-    })
-})
+
+//For map
+function initMap(link){
+    link.remove();
+    const map = L.map('map').setView([50.43132200998583, 30.514766270540136], 13);
+
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a>'
+    }).addTo(map);
+
+    //if  want a custom marker add te following: {icon: customMarker}
+    // into L.marker([50.43132200998583, 30.514766270540136], .....-here)  down below 
+    //in round braces after square braces , after a comma
+    //and uncomment the customMarker function below
+
+    // const customMarker = L.icon({
+    //     iconUrl: 'assets/images/pin.png',
+    //     iconSize:     [106,106], // size of the icon
+    //     // shadowSize:   [50, 64], // size of the shadow
+    //     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+    //     shadowAnchor: [4, 62],  // the same for the shadow
+    //     popupAnchor:  [-3, -76]
+    // })
+
+    L.marker([50.43132200998583, 30.514766270540136]).addTo(map)  
+        // .bindPopup('A pretty CSS popup.<br> Easily customizable.') //this line shows popup with txt/pi/whatever at marker
+        // .openPopup();  //this makes popup visible at once
+}
+//

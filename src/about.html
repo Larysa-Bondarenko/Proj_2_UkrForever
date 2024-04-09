@@ -7,6 +7,7 @@
   <title>About | Ukrayinska Forever</title>
 
   @@include('parts/head.html')
+  <link rel="stylesheet" href="assets/plugins/leaflet/leaflet.css">
   <link rel="stylesheet" href="@@webRoot/assets/css/about.min.css">
 </head>
 <body>
@@ -30,62 +31,7 @@
             <div class="team-grid"></div>
           </section>
 
-          <section class="container" id="faqs">
-              <div class="accordion-title">
-                <h2>Frequently Asked Questions</h2> 
-             </div>
-             <div class="accordion">
-                    <div class="accordion-item">
-                        <button class="accordion-btn" id="accordion-btn-1">
-                             <span>Q: How do I know if this language learning website is suitable for my level?</span>
-                             <span class="icon">
-                                <img src="@@webRoot/assets/images/arrow-down.svg"  class="down" id="down1" alt="arrow down">
-                             </span>  
-                        </button>
-                        <div class="accordion-content" id="accordion-content-1">
-                            <p> A: Our website offers placement tests designed to assess your proficiency level accurately. Based on your results, you'll be directed to appropriate learning materials tailored to your needs, ensuring an optimal learning experience.
-                            </p>
-                        </div>
-                    </div> 
-                    <div class="accordion-item">
-                        <button class="accordion-btn" id="accordion-btn-2">
-                             <span>Q: Are the language learning resources available on this website updated regularly?</span>
-                             <span class="icon">
-                                <img src="@@webRoot/assets/images/arrow-down.svg"  class="down" id="down2" alt="arrow down">
-                             </span>  
-                        </button>
-                        <div class="accordion-content" id="accordion-content-2">
-                            <p>A: Yes, we are committed to providing up-to-date content that reflects the latest developments in language learning. Our team continuously reviews and updates materials to ensure relevance and effectiveness, keeping pace with evolving linguistic trends and educational best practices                                
-                            </p>
-                        </div>
-                    </div> 
-                    <div class="accordion-item">
-                        <button class="accordion-btn" id="accordion-btn-3">
-                             <span>Q: Can I access the language learning materials on this website from my mobile device?</span>
-                             <span class="icon">
-                                <img src="@@webRoot/assets/images/arrow-down.svg"  class="down" id="down3" alt="arrow down">
-                             </span>  
-                        </button>
-                        <div class="accordion-content" id="accordion-content-3">
-                            <p>A: Absolutely! Our website is fully optimized for mobile devices, allowing you to access our comprehensive range of learning resources anytime, anywhere. Whether you're on the go or prefer studying from the comfort of your home, our mobile-friendly platform ensures seamless learning on any device                                
-                            </p>
-                        </div>
-                    </div> 
-                    <div class="accordion-item">
-                        <button class="accordion-btn" id="accordion-btn-4">
-                             <span>Q: Are there opportunities for interactive practice and feedback on this language learning website?</span>
-                             <span class="icon">
-                                <img src="@@webRoot/assets/images/arrow-down.svg"  class="down" id="down4" alt="arrow down">
-                             </span>  
-                        </button>
-                        <div class="accordion-content" id="accordion-content-4">
-                            <p> A: Yes, interactive practice and feedback are integral parts of our learning approach. Our platform offers various interactive exercises, quizzes, and speaking activities to reinforce your language skills. Additionally, you'll have access to forums and community features where you can engage with fellow learners and receive feedback from language experts.                                
-                            </p>
-                        </div>
-                    </div> 
-             </div>
-            
-          </section>
+          @@include('parts/accordion.html')
 
           <h2>Company details</h2>
           <p>Get in touch with our team today</p>
@@ -108,9 +54,15 @@
             </form>
           </div>
              </section>
-          <section class="container" id="map">
-            <h2>Map</h2>
-            <div class="location"></div>
+          
+            <section class="location container">
+            <div id="map" class="map">
+              <a href="#" class="map_link" onclick="event.preventDefault();initMap(this)">
+                  <img class="lazy" src="data:image/gif;base64,R0lGODlhBAADAIAAAP///wAAACH5BAEAAAEALAAAAAAEAAMAAAIDjI9WADs=" 
+                  data-src="@@webRoot/assets/images/map-3-min.png" alt="map"/>
+                  <span> Click to interactive map</span>
+              </a>
+          </div> 
           </section>
 
     </main>
@@ -120,6 +72,13 @@
 
 
   @@include('parts/foot.html')
+  <script src="assets/js/lazyload.min.js"></script> 
+  <script>   
+     var lazyLoadInstance = new LazyLoad()
+  </script>
+
+  <script src="@@webRoot/assets/js/accordion.min.js"></script>
+  <script src="assets/plugins/leaflet/leaflet.js"></script>
   <script src="@@webRoot/assets/js/about.min.js"></script>
 </body>
 </html>

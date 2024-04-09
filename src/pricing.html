@@ -7,6 +7,7 @@
   <title>Pricing | Ukrayinska Forever</title>
 
   @@include('parts/head.html')
+  <link rel="stylesheet" href="@@webRoot/assets/plugins/light-slider/css/lightslider.min.css">
   <link rel="stylesheet" href="@@webRoot/assets/css/pricing.min.css">
 </head>
 <body>
@@ -25,10 +26,7 @@
 
         @@include('parts/accordion.html')      
         
-        <section class="slider container">
-          <h2>Lessons Slider</h2>
-          <div class="LightSlider"></div>
-        </section>
+        @@include('parts/slider.html')  
      
     </main>
     
@@ -37,7 +35,11 @@
 
   
   @@include('parts/foot.html')
+
   <script src="@@webRoot/assets/js/accordion.min.js"></script>
+  <script src="assets/js/jquery-3.7.1.min.js"></script>
+  <script src="@@webRoot/assets/plugins/light-slider/js/lightslider.min.js"></script>
+  <script src="@@webRoot/assets/js/slider.min.js"></script>
   <!-- <script src="@@webRoot/assets/js/pricing.min.js"></script> -->
 </body>
 </html>
