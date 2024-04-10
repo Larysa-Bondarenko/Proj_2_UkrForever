@@ -1,5 +1,123 @@
 @import 'vars';
 
+//Price plans
+
+.pricing{
+  margin-bottom: 70px;
+  background-color: $white;
+  padding-top: 60px;
+  h2{
+    margin: 0 auto 30px;
+    width: 50%;
+    text-align: center;
+    font-size: clamp(22px,3.87vw,30px);
+    font-weight: 600;
+  }
+}
+.promotion{
+  text-align: center;
+  padding: 0 190px;
+}
+.price-flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 30px 5px;
+   
+   
+  }
+  .tarif-card{
+    // position: relative;
+    border: 1px solid $dark-grey-fon;
+    color: $black;
+    background-color: $white;
+    border-radius: 16px;
+    text-align: center;
+    padding: 10px 4px 30px;
+    background: url(/assets/images/tarif-img.png) no-repeat top 16px left 16px;
+    h3{
+      margin: 20px auto 30px;
+      text-align: center;
+      font-size: clamp(18px,3.87vw,26px);
+    }
+    &:hover, &:focus{
+      color: $white;
+     background-color: $dark-grey-fon;
+     .p-pseudo{
+      &::after { 
+        content: '';
+        border: 1px solid $white; 
+      }
+    }
+  }
+  }
+.sub-txt{
+  font-size: clamp(16px,1.87vw,20px);
+}
+.inner-flex{
+  display: flex;
+  flex-direction: column;
+  
+}
+.dollar-part{
+  text-align: start;
+  h2{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .dollar{
+    font-size: clamp(28px,3.87vw,36px);
+    text-transform: uppercase;
+  }
+}
+.p-pseudo{
+  &::after { 
+    content: ''; 
+    display: block;
+    width: 100%; 
+    border: 1px solid $black; 
+    margin: 30px auto;
+  color: $black;
+  }
+}
+
+.tarif-line{
+  display: flex;
+  height: 40px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  padding: 4px;
+  margin-bottom: 20px;
+  img{
+    width: 16px;
+    aspect-ratio: 1;
+  }
+  .line-it{
+    font-size: clamp(18px,1.87vw,20px);
+  }
+}
+.tarif-card {
+  .btn-wrap{
+   
+    padding-right: 130px;
+  }
+  .btn{
+    width: 100%;
+    margin: 0 auto 0 10px;
+    background-color: $blue-btn;
+    // margin-right: 160px;
+    &:hover, &:focus{
+      background-color: $pink;
+    }
+    &:active{
+      filter: invert(100%)
+    }
+  }
+}
+
+
 //accordion
 .accordion-title {
     display: flex;
@@ -73,6 +191,9 @@ body{
 .accordion-title h2{
     width: 90%;
     text-align: center;
+}
+.accordion-item button{
+  height: 100px;
 }
 }
 
@@ -212,3 +333,115 @@ h3{
       align-items: center;
   
   }
+
+  
+
+  //Responsive
+  @media  screen and (max-width: 978px){
+  
+    .pricing{
+      h2{
+        width: 100%;
+        padding: 60px 0 0; 
+        margin: 0 auto 30px;
+      }
+    }
+    .promotion{
+      padding:0; 
+      margin: 0 auto 30px;
+    }
+  }
+
+  @media  screen and (max-width: 840px){
+  
+    .pricing{
+      h2{
+        padding: 60px 0 0; 
+        margin: 0 auto 30px;
+      }
+    }
+ 
+    .price-flex{
+      flex-direction: column;
+      justify-content: center; 
+      align-items: center;
+        margin-bottom: 40px;
+        gap: 40px;
+      }
+     
+     .inner-flex{
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 50px;
+      width: 100%;
+      .dollar-part{
+          width: 40%;
+      }
+       .tarif-list{
+        width: 55%;
+        
+      }
+   
+    }
+    .tarif-line{
+      padding-left: 60px;
+    }
+    .tarif-card {
+      .btn-wrap{       
+      padding-right: 0;
+      margin: 0 auto;
+      }
+      .btn{
+        width: 50%;
+       
+      }
+    }
+
+  }
+
+  @media  screen and (max-width: 700px){
+    .inner-flex{
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      text-align: center;
+      gap: 20px;
+      .dollar-part, .tarif-list{
+        width: 100%;
+        text-align: center;
+    }
+    
+    }
+    .tarif-line{
+      padding-left: 0;
+    }
+    
+  }
+    @media  screen and (max-width: 520px){
+      #pricing{
+        margin-bottom: 30px;        
+        padding-top: 100px;
+      } 
+      .dollar-part, .tarif-list {
+        text-align: center;
+    }
+
+    .dollar-part{
+      h2{
+        
+        padding-top: 20px;}
+    }
+
+
+    .accordion-title h2 {
+      margin: 10px auto 20px;
+  }
+  .lessonSlider-wrap{   
+    width: 100%;
+    padding: 0 30px 20px;
+    margin-bottom: 30px;
+  }
+
+    }

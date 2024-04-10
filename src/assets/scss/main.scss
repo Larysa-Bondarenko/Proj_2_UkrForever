@@ -4,9 +4,9 @@
 .hero{
   color: $white;
   background-color: $dark-grey-fon;
-  font-family: 'Roboto', sans-serif;
+  
     font-size: clamp(18px,1.87vw, 20px);
-    font-weight: 400;
+   
     text-align: center;
     margin: 0 auto 70px;
     padding: 40px;
@@ -56,7 +56,6 @@
 }
 
 .hero-img-wrap{
-
   margin: 0 auto;
   img{
     aspect-ratio: 50/20;
@@ -321,4 +320,61 @@ h3{
     justify-content: space-between;
     align-items: center;
 
+}
+
+//Responsive
+@media screen and (max-width: 1110px){
+  .topic-list{
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+@media screen and (max-width: 978px){
+  .hero-flex h1{
+    line-height: 50px;
+  }
+  .hero-flex, .discover-flex{
+    flex-direction: column;
+
+  }
+  .slogan, .txt-n-btn{
+    width: 100%;
+    text-align: center;
+  }
+
+
+}
+
+@media screen and (max-width: 860px){
+  .topic-list{
+    grid-template-columns: repeat(2,1fr);
+  }
+  h3{
+    text-align: center;
+  }
+  .hero-flex .slogan {
+    width: 100%;
+    padding: 0;}
+}
+
+@media screen and (max-width: 586px){
+.topic-list{
+    grid-template-columns: 1fr;
+  }
+h2{
+  line-height: 34px;
+}
+}
+
+
+
+@media screen and (max-width: 520px){
+  .discover, .hero{
+    padding: 60px 0 20px;
+  }
+  .txt-n-btn{
+    padding: 10px 0;
+  }
+  .hero-flex p{
+    padding: 20px 0;
+  }
 }

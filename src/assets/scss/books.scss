@@ -17,7 +17,7 @@ p{
     width: 75%;
     margin: 0 auto;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    
     font-size: clamp(16px,1.87vw, 20px);
     font-weight: 400;
    
@@ -41,8 +41,6 @@ p{
 .api-flex {
     .btn{
          width: 100%;
-         font-family: 'Roboto', sans-serif;
-         font-weight: 400;
          font-size: 18px;
          border-radius: 6px;
          color: $white;
@@ -201,4 +199,42 @@ padding: 10px 0 50px;
   border-bottom-right-radius: 16px;
 }
 
+
+//Responsive
+@media screen and (max-width: 987px){
+    .articles, #books-list{
+      grid-template-columns: repeat(2,1fr);
+    }
+  }
+  
+  @media screen and (max-width: 840px){
+  .api-flex{
+    flex-direction: column;
+    .img-wrap{
+        width: 100%;
+    }
+
+  }
+
+  }
+  @media screen and (max-width: 654px){
+    h2{
+      padding-top: 60px;
+      text-align: center;
+    }
+    .description{
+        text-align: center;
+    }
+    p{
+        margin: 0 auto;
+    }
+    .books-api{
+        padding: 16px 10px;
+
+    }
+    .articles, #books-list{
+      grid-template-columns: 1fr;
+    }
+
+  }
 
