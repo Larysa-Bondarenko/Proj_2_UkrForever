@@ -330,17 +330,21 @@ h3{
 }
 @media screen and (max-width: 978px){
   .hero-flex h1{
+    width: 100%;
     line-height: 50px;
   }
   .hero-flex, .discover-flex{
     flex-direction: column;
 
   }
+  .hero-flex .slogan {
+    width: 100%;
+
+  }
   .slogan, .txt-n-btn{
     width: 100%;
     text-align: center;
   }
-
 
 }
 
