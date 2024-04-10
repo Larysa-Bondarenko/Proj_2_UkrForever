@@ -35,7 +35,7 @@
     border-radius: 16px;
     text-align: center;
     padding: 10px 4px 30px;
-    background: url(@@webRoot/assets/images/tarif-img.png) no-repeat top 16px left 16px;
+    background: url(assets/images/tarif-img.png) no-repeat top 16px left 16px;
     h3{
       margin: 20px auto 30px;
       text-align: center;
@@ -75,7 +75,7 @@
   &::after { 
     content: ''; 
     display: block;
-    width: 100%; 
+    width: 90%; 
     border: 1px solid $black; 
     margin: 30px auto;
   color: $black;
